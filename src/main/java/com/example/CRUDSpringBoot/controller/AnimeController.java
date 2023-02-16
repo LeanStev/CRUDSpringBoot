@@ -6,10 +6,7 @@ import com.example.CRUDSpringBoot.service.AnimeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,5 +25,19 @@ public class AnimeController {
         return "index";
 
     }
+
+    @RequestMapping("/nuevoAnime")
+    public String mostrarFormulario(Model modelo){
+        Anime anime = new Anime();
+        modelo.addAttribute("anime", anime);
+        return  "nuevo_anime";
+    }
+    @RequestMapping(value = "/guardar",method = RequestMethod.POST)
+    public String guardarAnime(@ModelAttribute("anime") Anime anime){
+        animeService.save(anime);
+        return  "redirect:/";
+    }
+
+
 
 }
