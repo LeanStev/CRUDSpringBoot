@@ -30,11 +30,11 @@ public class AnimeController {
         return "login";
 
     }
-    @RequestMapping("/Register")
+   /* @RequestMapping("/Register")
     public String Register(Model modelo){
         return "Register";
 
-    }
+    }*/
 
     //Se hace un requestMapping para extraer todos los datos de la lista
     @RequestMapping("/index")

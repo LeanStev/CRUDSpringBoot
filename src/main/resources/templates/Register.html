@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html xmlns:th="http://www.thymeleaf.org" >
 <head>
   <meta charset="UTF-8">
   <title>Lista de Animes</title>
@@ -111,6 +111,9 @@
         .links a{
         margin-left: 4px;
         }
+        .login_btn{
+          width:120px;
+        }
 
         </style>
 
@@ -131,32 +134,33 @@
         </div>
       </div>
       <div class="card-body">
-        <form id="Form">
+
+        <form id="Form" th:action="@{/guardarUsuario}" th:object="${usuario}" method="post">
           <div class="input-group form-group">
             <div class="input-group form-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
               </div>
-              <input type="text" class="form-control" placeholder="Nombre" required>
+              <input type="text" th:field="*{nombre}" class="form-control"  placeholder="Nombre" required>
 
             </div>
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="Usuario" required>
+            <input type="text" th:field="*{correo}" class="form-control" placeholder="Correo" required>
 
           </div>
           <div class="input-group form-group">
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
             </div>
-            <input type="password" class="form-control" placeholder="Contraseña" required>
+            <input type="password" th:field="*{contraseña}" class="form-control" placeholder="Contraseña" required>
           </div>
           <div class="row align-items-center remember">
             <input type="checkbox">Recuerdame
           </div>
           <div class="form-group">
-            <button id="Input"  type="submit" class="btn float-right login_btn"  formaction="/"></button>
+            <button id="Input"   class="btn float-right login_btn" >Registrar</button>
             <!--<input id="Input" type="submit" value="Iniciar" class="btn float-right login_btn">-->
 
           </div>
