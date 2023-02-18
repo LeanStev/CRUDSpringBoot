@@ -11,7 +11,6 @@ import java.util.List;
 public class AnimeService {
 
     @Autowired
-
     private AnimeRepository animeRepository;
 
     public List<Anime> listAll(){

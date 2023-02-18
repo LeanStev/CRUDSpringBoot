@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Animes</title>
+  <script src="https://kit.fontawesome.com/f369b813cd.js" crossorigin="anonymous">
+
+        let form = document.getElementById("Input");
+
+        form.addEventListener('onclick', function(e){
+          e.preventDefault();
+          location.href("index.html");
+        });
+
+  </script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+   @import url('https://fonts.googleapis.com/css?family=Numans');
+                *{
+                box-sizing:border-box;}
+              body{
+              background: url(https://wallpapercave.com/wp/wp5183572.gif);
+              background-size: cover;
+              }
+        /* Made with love by Mutiullah Samim*/
+
+
+
+        html,body{
+        height: 100%;
+        font-family: 'Numans', sans-serif;
+        }
+
+        .container{
+        height: 100%;
+        align-content: center;
+        }
+
+        .card{
+        height: 370px;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
+        }
+
+        .social_icon span{
+        font-size: 60px;
+        margin-left: 10px;
+        color: #4296f8;
+        }
+
+        .social_icon span:hover{
+        color: white;
+        cursor: pointer;
+        }
+
+        .card-header h3{
+        color: white;
+        }
+
+        .social_icon{
+        position: absolute;
+        right: 20px;
+        top: -60px;
+        }
+
+        .input-group-prepend span{
+        width: 50px;
+        background-color: #4296f8;
+        color: black;
+        border:0 !important;
+        margin: 10px 0;
+        }
+
+        input:focus{
+        outline: 0 0 0 0  !important;
+        box-shadow: 0 0 0 0 !important;
+
+        }
+
+        .remember{
+        color: white;
+        }
+
+        .remember input
+        {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+        }
+
+        .login_btn{
+        color: black;
+        background-color: #4296f8;
+        width: 100px;
+        }
+
+        .login_btn:hover{
+        color: black;
+        background-color: white;
+        }
+
+        .links{
+        color: white;
+        }
+
+        .links a{
+        margin-left: 4px;
+        }
+
+        </style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>Iniciar Sesion</h3>
+        <div class="d-flex justify-content-end social_icon">
+          <span><i class="fab fa-facebook-square"></i></span>
+          <span><i class="fab fa-google-plus-square"></i></span>
+          <span><i class="fab fa-twitter-square"></i></span>
+        </div>
+      </div>
+      <div class="card-body">
+        <form id="Form">
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Usuario" required>
+
+          </div>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Contraseña" required>
+          </div>
+          <div class="row align-items-center remember">
+            <input type="checkbox">Recuerdame
+          </div>
+          <div class="form-group">
+            <button id="Input"  type="submit" class="btn float-right login_btn"  formaction="index">Iniciar</button>
+            <!--<input id="Input" type="submit" value="Iniciar" class="btn float-right login_btn">-->
+
+          </div>
+        </form >
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-center links">
+          Aun no tienes una cuenta?<a href="/Register">Registrar</a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#">Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+
+
+</script>
+</body>
+</html>
