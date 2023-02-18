@@ -14,6 +14,16 @@
               background-size: cover;
               height: 100%;
                font-family: 'Numans', sans-serif;
+               color: white;
+
+              }
+              .form-control{
+              color:#fff;
+              background-color:transparent;
+              }
+              .rowContainer{
+                position:relative;
+                margin-top:100px;
               }
 
         </style>
@@ -31,7 +41,7 @@
         </div>
     </nav>
 <br>
-    <div class="container">
+    <div class="container rowContainer">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center">
                 <h1 class="text-center">Registro de anime</h1>
@@ -62,7 +72,7 @@
                             <input type="number"  min="0" max="1"  name="finalizado" th:field="*{finalizado}" id="finalizado" class="form-control" required maxlength="1">
                         </div>
 
-                        <spam style="color:gray">*Finalizado = 1 , No finalizado = 0</spam>
+                        <spam style="color:#fa6c6c">*Finalizado = 1 , No finalizado = 0</spam>
                         <br>
                         <div class="box-footer mt-3">
                             <button class="btn btn-success">Guardar</button>

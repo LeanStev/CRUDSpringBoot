@@ -18,6 +18,54 @@
         .table{
             --bs-table-color: #ffffff!important;
         }
+        ////
+        .btnAgregar {
+          --b: 3px;   /* border thickness */
+          --s: .45em; /* size of the corner */
+          --color: #fff;
+          text-decoration:none;
+          position:relative;
+          left: 45vw;
+          top:10px;
+
+          padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+          color: var(--color);
+          --_p: var(--s);
+          background:
+            conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+            var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+          transition: .3s linear, color 0s, background-color 0s;
+          outline: var(--b) solid #0000;
+          outline-offset: .6em;
+          font-size: 20px;
+
+          border: 0;
+
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+
+        .btnAgregar:hover,
+        .btnAgregar:focus-visible{
+          --_p: 0px;
+          outline-color: var(--color);
+          outline-offset: .05em;
+        }
+
+        .btnAgregar:active {
+          background: var(--color);
+          color: #fff;
+        }
+
+        //////////
+        .btnAñadir{
+            position:relative;
+            left: 15vw;
+        }
+
+
+
         </style>
 
 </head>
@@ -25,16 +73,23 @@
 <body>
 
     <nav class="navbar bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" style="color:white" href="/">Lista de Anime</a>
+            <ul>
+                <li class="nav-item">
+                    <a class="btnAgregar" href="" style="
+                    color:white;
+                    text-decoration:none;">
+                        Lista de Anime
+                    </a>
+                </li>
+            </ul>
 
-        </div>
     </nav>
     <br>
 
-        <a style="color:white" class="nav-link" href="/nuevoAnime">Añadir anime</a>
+        <a style="color:white" class="btnAñadir" href="/nuevoAnime">Añadir anime</a>
+        <!--<button class="btnAgregar" role="button">Añadir Anime</button>-->
 
-    <br>
+    <br><br><br>
     <div class="container text-center">
         <table class="table">
             <thead>
