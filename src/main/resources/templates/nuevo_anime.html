@@ -12,8 +12,26 @@
               body,html{
               background: url(https://i.pinimg.com/originals/98/28/6a/98286a2243ada070aef5a6925dd3bc54.gif);
               background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
               height: 100%;
             font-family: 'Numans', sans-serif;
+              }
+              .form-control{
+              background: transparent;
+              }
+              label{
+              color:#fff;
+              }
+              .form-control::placeholder { color: #fff; }
+              input{
+              color:#fff!important;
+              }
+              input:focus{
+              background:transparent!important;
+              }
+              select{
+              background-color:transparent;
               }
  
         </style>
@@ -24,17 +42,15 @@
 
     <nav class="navbar bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" style="color:white" href="/">Lista de Anime</a>
-            <ul>
-                <li class="nav-item"><a style="color:white" class="nav-link" href="/nuevoAnime">Añadir anime</a></li>
-            </ul>
+            <a class="navbar-brand" style="color:white;" href="/index">Lista de Anime</a>
+
         </div>
     </nav>
 <br>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center">
-                <h1 class="text-center">Registro de anime</h1>
+                <h1 class="text-center" style="color:white;">Registro de anime</h1>
                 <div class="card-body">
                     <form th:action="@{/guardar}" th:object="${anime}" method="post">
 

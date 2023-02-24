@@ -8,13 +8,13 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 public interface SecurityConfig2 extends WebSecurityConfigurer {
+    @Bean
+    BCryptPasswordEncoder passwordEncoder();
+
     void configure(AuthenticationManagerBuilder auth)
             throws Exception;
 
     void configure(HttpSecurity http) throws Exception;
-
-    @Bean
-    BCryptPasswordEncoder passwordEncoder();
 
     @Override
     void init(SecurityBuilder builder) throws Exception;

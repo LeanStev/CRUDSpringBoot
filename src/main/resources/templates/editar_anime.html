@@ -12,13 +12,27 @@
               body,html{
               background: url(https://external-preview.redd.it/QaLgZjUUQqV1uBV88mM047X7VtD2737Ov4HvMSLXey0.gif?s=91980ef09f8214af77ba449145f7ca816f7bc41d);
               background-size: cover;
+              background-repeat: no-repeat;
+              background-position: right;
               height: 100%;
                font-family: 'Numans', sans-serif;
                color: white;
 
               }
-              .form-control{
+               .form-control{
+              background: transparent;
+              }
+              label{
               color:#fff;
+              }
+              .form-control::placeholder { color: #fff; }
+              input{
+              color:#fff!important;
+              }
+              input:focus{
+              background:transparent!important;
+              }
+              select{
               background-color:transparent;
               }
               .rowContainer{
@@ -34,7 +48,7 @@
 
     <nav class="navbar bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" style="color:white" href="/">Lista de Anime</a>
+            <a class="navbar-brand" style="color:white" href="/index">Lista de Anime</a>
             <ul>
                 <li class="nav-item"><a style="color:white" class="nav-link" href="/nuevoAnime">Añadir anime</a></li>
             </ul>

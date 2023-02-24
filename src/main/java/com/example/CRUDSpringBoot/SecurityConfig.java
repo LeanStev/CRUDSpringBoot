@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.SecurityBuilder;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.WebSecurityConfigurer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -26,12 +27,23 @@ public class SecurityConfig implements SecurityConfig2 {
     @Autowired
     private BCryptPasswordEncoder bcrypt;
 
+
+
+        @Bean
+        public BCryptPasswordEncoder passwordEncoder(){
+            BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+            return  bCryptPasswordEncoder;
+        }
+
+
+
+
         @Override
         public void configure(AuthenticationManagerBuilder auth)
-        throws Exception{
+            throws Exception{
 
-        auth.userDetailsService(userDetailsService).passwordEncoder(bcrypt);
-    }
+            auth.userDetailsService(userDetailsService).passwordEncoder(bcrypt);
+        }
 
         @Override
         public void  configure(HttpSecurity http) throws Exception{
@@ -45,13 +57,6 @@ public class SecurityConfig implements SecurityConfig2 {
     }
 
     @Override
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
-        BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-        return  bCryptPasswordEncoder;
-    }
-
-    @Override
     public void init(SecurityBuilder builder) throws Exception {
 
     }
@@ -60,6 +65,7 @@ public class SecurityConfig implements SecurityConfig2 {
     public void configure(SecurityBuilder builder) throws Exception {
 
     }
+
 
 
 }

@@ -20,11 +20,11 @@ public class AnimeController {
     private AnimeRepository animeRepository;
 
 
-    @RequestMapping("/")
+  /*  @RequestMapping("/")
     public String Login(Model modelo){
        return "login";
 
-    }
+    }*/
     /*@RequestMapping("/Login")
     public String Login2(Model modelo){
         return "login";
