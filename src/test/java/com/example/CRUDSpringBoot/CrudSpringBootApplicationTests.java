@@ -1,4 +1,4 @@
-package com.example.CRUDSpringBoot;
+/*package com.example.CRUDSpringBoot;
 
 import com.example.CRUDSpringBoot.entidades.Usuario;
 import com.example.CRUDSpringBoot.repository.UsuarioRepository;
@@ -7,12 +7,12 @@ import org.apache.tomcat.util.buf.UEncoder;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+*//*import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;*//*
 
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;*/
 
-@SpringBootTest
+/*@SpringBootTest
 class CrudSpringBootApplicationTests {
 
 	@Autowired
@@ -34,4 +34,4 @@ class CrudSpringBootApplicationTests {
 
 	}
 
-}
+}*/

@@ -1,4 +1,4 @@
-package com.example.CRUDSpringBoot.service2;
+/*package com.example.CRUDSpringBoot.service2;
 
 import com.example.CRUDSpringBoot.entidades.Usuario;
 import com.example.CRUDSpringBoot.repository.UsuarioRepository;
@@ -11,8 +11,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;*/
 
+/*
 @Service
 public class UserService implements UserDetailsService {
 
@@ -31,4 +32,4 @@ public class UserService implements UserDetailsService {
 
         return userDet;
     }
-}
+}*/

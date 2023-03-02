@@ -1,4 +1,4 @@
-package com.example.CRUDSpringBoot;
+/*package com.example.CRUDSpringBoot;
 
 import com.example.CRUDSpringBoot.service2.UserService;
 
@@ -13,11 +13,11 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;*/
 
 
 
-@Configuration
+/*@Configuration
 @EnableWebSecurity
 public class SecurityConfig implements SecurityConfig2 {
 
@@ -68,4 +68,4 @@ public class SecurityConfig implements SecurityConfig2 {
 
 
 
-}
+}*/
