@@ -18,6 +18,7 @@ El mismo cuenta con spring boot, spring mvc, jpa, hibernate y metodos HTTP (GET,
 ![index](https://user-images.githubusercontent.com/110206929/224465344-ab57177d-851a-403c-9281-2dfe6f19ebaf.png)
 
 <h2> Edit </h2>
+
 ![edit](https://user-images.githubusercontent.com/110206929/224465351-c96e5daa-a4c3-45f1-82de-234659133c8f.png)
 
 <h2> Add </h2>
