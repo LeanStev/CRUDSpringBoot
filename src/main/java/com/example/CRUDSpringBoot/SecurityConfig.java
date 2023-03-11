@@ -17,7 +17,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;*/
 
 
 
-/*@Configuration
+/*
+@Configuration
 @EnableWebSecurity
 public class SecurityConfig implements SecurityConfig2 {
 
@@ -68,4 +69,5 @@ public class SecurityConfig implements SecurityConfig2 {
 
 
 
-}*/
+}
+*/

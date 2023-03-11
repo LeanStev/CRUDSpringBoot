@@ -1,6 +1,6 @@
-/*package com.example.CRUDSpringBoot;*/
+/*package com.example.CRUDSpringBoot;
 
-/*import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.SecurityBuilder;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.WebSecurityConfigurer;
